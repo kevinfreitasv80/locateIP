@@ -1,0 +1,122 @@
+body,
+button,
+input {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+body {
+  font-size: 20px;
+  background: #e1f5c4;
+  align-items: center;
+  margin: 0;
+}
+body .hidden {
+  display: none;
+}
+body #modal {
+  padding: 1em 0;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.7em;
+  text-align: center;
+  font-size: 0.8em;
+  width: 20%;
+  transition: 0.4s;
+}
+body #modal.error {
+  background: #f95842;
+}
+body #modal.success {
+  background: #476a31;
+}
+body .container {
+  border-radius: 0.4em;
+  display: block;
+  margin: auto;
+  width: 95%;
+  background: #9dc9ac;
+}
+body .container.container1 {
+  margin-top: 1em;
+  padding: 1em 0;
+  text-align: center;
+}
+body .container.container1 h1 {
+  align-items: center;
+  margin-top: 0.2em;
+  font-size: 2rem;
+}
+body .container1 {
+  margin-bottom: 2em;
+}
+body .container1 article {
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+}
+body .container1 article .btn,
+body .container1 article input {
+  border-radius: 0.2em;
+  border: none;
+}
+body .container1 article input {
+  margin-right: 1em;
+  width: 60%;
+  padding-left: 1em;
+  color: #000;
+}
+body .container1 article .btn {
+  padding: 1em 1.5em;
+  background: #919167;
+  transition: 0.4s;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+body .container1 article .btn:hover {
+  cursor: pointer;
+  background-color: #85855f;
+}
+body .container1 article .btn:active {
+  background-color: #9b9b72;
+}
+body #infors {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body #infors article {
+  text-align: center;
+  width: 40%;
+  margin-bottom: 1em;
+}
+body #infors article div {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
+@media (max-width: 37.5em) {
+  body #modal {
+    width: 70%;
+  }
+  body .container1 article {
+    flex-direction: column;
+    width: 80%;
+  }
+  body .container1 article input,
+  body .container1 article button {
+    height: 40%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .container1 article input {
+    padding: 1em 0;
+    margin-bottom: 1em;
+  }
+  body #infors article {
+    width: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */

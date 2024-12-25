@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locate IP</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script defer src="assets/script.js"></script>
+  </head>
+  <body>
+    <div id="modal" class="hidden">
+      <h2 id="message"></h2>
+    </div>
+    <section class="container container1">
+      <h1 style="text-transform: capitalize">Locate IP</h1>
+      <article>
+        <input
+          id="input"
+          tabindex="0"
+          type="text"
+          placeholder="Insert the IP here"
+          autocomplete="off"
+        />
+        <button id="btn" class="btn" tabindex="0">Locate IP</button>
+      </article>
+    </section>
+    <section>
+      <div id="infors">
+        <article class="container">
+          <h3>Country</h3>
+          <div id="country"></div>
+        </article>
+        <article class="container">
+          <h3>Country Code</h3>
+          <div id="countryCode"></div>
+        </article>
+        <article class="container">
+          <h3>Region</h3>
+          <div id="region"></div>
+        </article>
+        <article class="container">
+          <h3>Region Name</h3>
+          <div id="regionName"></div>
+        </article>
+        <article class="container">
+          <h3>City</h3>
+          <div id="city"></div>
+        </article>
+        <article class="container">
+          <h3>Latitude</h3>
+          <div id="lat"></div>
+        </article>
+        <article class="container">
+          <h3>Longitude</h3>
+          <div id="lon"></div>
+        </article>
+        <article class="container">
+          <h3>Zip</h3>
+          <div id="zip"></div>
+        </article>
+        <article class="container">
+          <h3>Time Zone</h3>
+          <div id="timezone"></div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>

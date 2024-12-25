@@ -1,0 +1,151 @@
+$bg: #e1f5c4;
+$text: #fff;
+$bgContainer1: #9dc9ac;
+$btn: #919167;
+$black: #000;
+$green: #476a31;
+$red: #f95842;
+
+body,
+button,
+input {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: $text;
+}
+
+body {
+  .hidden {
+    display: none;
+  }
+
+  font-size: 20px;
+  background: $bg;
+  align-items: center;
+  margin: 0;
+
+  #modal {
+    padding: 1em 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.7em;
+    text-align: center;
+    font-size: 0.8em;
+    width: 20%;
+    transition: 0.4s;
+
+    &.error {
+      background: $red;
+    }
+    &.success {
+      background: $green;
+    }
+  }
+
+  .container {
+    border-radius: 0.4em;
+    display: block;
+    margin: auto;
+    width: 95%;
+    background: $bgContainer1;
+
+    &.container1 {
+      margin-top: 1em;
+      padding: 1em 0;
+      text-align: center;
+
+      h1 {
+        align-items: center;
+        margin-top: 0.2em;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .container1 {
+    margin-bottom: 2em;
+
+    article {
+      display: flex;
+      margin: 0 auto;
+      width: 40%;
+      $radius: 0.2em;
+
+      .btn,
+      input {
+        border-radius: $radius;
+        border: none;
+      }
+
+      input {
+        margin-right: 1em;
+        width: 60%;
+        padding-left: 1em;
+        color: $black;
+      }
+
+      .btn {
+        padding: 1em 1.5em;
+        background: $btn;
+        transition: 0.4s;
+        font-size: 0.7em;
+        font-weight: 600;
+
+        &:hover {
+          cursor: pointer;
+          background-color: darken($btn, 4);
+        }
+        &:active {
+          background-color: lighten($btn, 4);
+        }
+      }
+    }
+  }
+
+  #infors {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    article {
+      text-align: center;
+      width: 40%;
+      margin-bottom: 1em;
+
+      div {
+        font-size: 1.5em;
+        padding-bottom: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 37.5em) {
+  body {
+    #modal {
+      width: 70%;
+    }
+
+    .container1 article {
+      flex-direction: column;
+      width: 80%;
+
+      input,
+      button {
+        height: 40%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        padding: 1em 0;
+        margin-bottom: 1em;
+      }
+    }
+
+    #infors article {
+      width: 70%;
+    }
+  }
+}
